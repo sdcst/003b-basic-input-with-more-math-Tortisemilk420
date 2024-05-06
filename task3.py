@@ -13,3 +13,41 @@ Enter the fift price: 7.99
 Your subtotal is $63.71 and your taxes total $7.65 for a total of $71.36
 
 """
+
+def calculate_total_price(items):
+    subtotal = sum(items)
+    tax_rate = 0.12  
+    tax_amount = round(subtotal * tax_rate, 2)
+    total_price = subtotal + tax_amount
+    return subtotal, tax_amount, total_price
+
+def main():
+    print("Enter prices of 4 items:")
+
+def new_func(calculate_total_price):
+    
+    new_func1(calculate_total_price)
+
+def new_func1(calculate_total_price):
+    new_func2(calculate_total_price)
+
+def new_func2(calculate_total_price):
+
+    
+            item_prices = []
+            for i in range(4):
+                price = float(input(f"Enter price of item {i + 1}: $"))
+                item_prices.append(price)
+
+        
+            subtotal, tax_amount, total_price = calculate_total_price(item_prices)
+
+            print("\nSummary:")
+            print(f"Subtotal: ${subtotal:.2f}")
+            print(f"Tax: ${tax_amount:.2f}")
+            print(f"Total Price: ${total_price:.2f}")
+
+
+
+   
+
